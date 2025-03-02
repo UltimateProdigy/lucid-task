@@ -2,11 +2,38 @@ import FormulaInput from "./components/formula-input";
 
 function App() {
 	return (
-		<div className="flex justify-center flex-col p-4">
-			<p className="font-bold mb-4">
-				FORMULA INPUT - LUCID FINANCIALS TASK
-			</p>
-			<FormulaInput />
+		<div className="min-h-screen bg-black flex justify-center items-center p-6">
+			<div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
+				{/* Header */}
+				<div className="text-center mb-8">
+					<h1 className="text-3xl font-bold text-gray-900">
+						Formula Input
+					</h1>
+					<p className="text-gray-600 mt-2">
+						Lucid Financials Task - Hybrid Input with Autocomplete
+					</p>
+				</div>
+
+				{/* Formula Input Component */}
+				<div className="bg-gray-100 p-6 rounded-lg shadow-inner">
+					<FormulaInput />
+				</div>
+
+				{/* Footer */}
+				<div className="text-center mt-8 text-sm text-gray-500">
+					<p>
+						Built with ❤️ by{" "}
+						<a
+							href="https://github.com/UltimateProdigy"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-blue-600 hover:underline"
+						>
+							Akinola Ayobami
+						</a>
+					</p>
+				</div>
+			</div>
 		</div>
 	);
 }
