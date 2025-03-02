@@ -13,7 +13,7 @@ const FormulaInput = () => {
 	const [showSuggestions, setShowSuggestions] = useState(false);
 	const inputRef = useRef<HTMLInputElement>(null);
 
-	// fecthing the autocomplete suggestions
+	// fetching the autocomplete suggestions
 	const { data: suggestions = [] } = useQuery({
 		queryKey: ["suggestions", inputValue],
 		queryFn: async () => {

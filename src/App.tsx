@@ -4,7 +4,6 @@ function App() {
 	return (
 		<div className="min-h-screen bg-black flex justify-center items-center p-6">
 			<div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
-				{/* Header */}
 				<div className="text-center mb-8">
 					<h1 className="text-3xl font-bold text-gray-900">
 						Formula Input
@@ -14,12 +13,10 @@ function App() {
 					</p>
 				</div>
 
-				{/* Formula Input Component */}
 				<div className="bg-gray-100 p-6 rounded-lg shadow-inner">
 					<FormulaInput />
 				</div>
 
-				{/* Footer */}
 				<div className="text-center mt-8 text-sm text-gray-500">
 					<p>
 						Built with ❤️ by{" "}
